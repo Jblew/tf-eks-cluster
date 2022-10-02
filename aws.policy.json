@@ -96,7 +96,19 @@
         "dynamodb:Query",
         "dynamodb:ConditionCheckItem",
         "dynamodb:DeleteItem",
-        "dynamodb:UpdateTable"
+        "dynamodb:UpdateTable",
+        "dynamodb:DescribeContinuousBackups",
+        "dynamodb:UpdateContinuousBackups",
+        "dynamodb:DescribeTimeToLive",
+        "dynamodb:DescribeBackup",
+        "dynamodb:DescribeLimits",
+        "dynamodb:DescribeStream",
+        "dynamodb:DescribeTableReplicaAutoScaling",
+        "dynamodb:ListStreams",
+        "dynamodb:DescribeReservedCapacity",
+        "dynamodb:ListTagsOfResource",
+        "dynamodb:TagResource",
+        "dynamodb:UntagResource"
       ],
       "Resource": [
         "arn:aws:dynamodb:eu-central-1:168577890239:table/tf-eks-cluster-*",
