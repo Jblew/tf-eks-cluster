@@ -111,9 +111,9 @@
         "dynamodb:UntagResource"
       ],
       "Resource": [
-        "arn:aws:dynamodb:eu-central-1:168577890239:table/tf-eks-cluster-*",
-        "arn:aws:dynamodb:eu-central-1:168577890239:table/tf-eks-cluster-*/index/*",
-        "arn:aws:dynamodb:eu-central-1:168577890239:table/tf-eks-cluster-*/stream/*",
+        "arn:aws:dynamodb:eu-central-1:*:table/tf-eks-cluster-*",
+        "arn:aws:dynamodb:eu-central-1:*:table/tf-eks-cluster-*/index/*",
+        "arn:aws:dynamodb:eu-central-1:*:table/tf-eks-cluster-*/stream/*",
         "arn:aws:s3:::tf-eks-cluster-*/*",
         "arn:aws:s3:::tf-eks-cluster-*"
       ]
