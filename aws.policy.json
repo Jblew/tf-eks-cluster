@@ -108,14 +108,16 @@
         "dynamodb:DescribeReservedCapacity",
         "dynamodb:ListTagsOfResource",
         "dynamodb:TagResource",
-        "dynamodb:UntagResource"
+        "dynamodb:UntagResource",
+        "budgets:*"
       ],
       "Resource": [
         "arn:aws:dynamodb:eu-central-1:*:table/tf-eks-cluster-*",
         "arn:aws:dynamodb:eu-central-1:*:table/tf-eks-cluster-*/index/*",
         "arn:aws:dynamodb:eu-central-1:*:table/tf-eks-cluster-*/stream/*",
         "arn:aws:s3:::tf-eks-cluster-*/*",
-        "arn:aws:s3:::tf-eks-cluster-*"
+        "arn:aws:s3:::tf-eks-cluster-*",
+        "arn:aws:budgets::*:budget/tf-eks-cluster-*"
       ]
     }
   ]
