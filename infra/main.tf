@@ -7,7 +7,7 @@ variable "secret_key" {
   sensitive = true
 }
 variable "region" {
-  type      = string
+  type = string
 }
 
 terraform {
@@ -28,7 +28,11 @@ terraform {
 }
 
 provider "aws" {
-  region = var.region
+  region     = var.region
   access_key = var.access_key
   secret_key = var.secret_key
+}
+
+locals {
+  cluster_name = "tf-eks-cluster"
 }
